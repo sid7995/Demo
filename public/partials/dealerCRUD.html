@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type='button' value='All' (click)='allCarss();'/>
+<a routerLink="/car">Add Car</a>
+
+<table>
+    <tbody>
+    <tr *ngFor="let car of car">
+        <td>{{car.vIN}}</td>
+        <td>{{car.make}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.price}}</td>
+        <td>{{car.average}}</td>
+        <td>{{car.fuelType}}</td>
+        <td>{{car.gearType}}</td>
+        <td><input type='button' value="DELETE" name="{{car.vIN}}" (click)="deleteCar($event);"/></td>
+    </tr>
+    </tbody></table>
+</body>
+</html>

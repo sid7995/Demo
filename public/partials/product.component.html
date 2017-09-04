@@ -1,0 +1,30 @@
+<div class='productForm'>
+    <form name="productForm" #productForm="ngForm">
+
+        <div *ngIf="errorMessage" [ngClass]="'error'"> {{errorMessage}}</div>
+        <h1>{{title}}</h1>
+        Product Id : <input type='number' [(ngModel)]='product.id' name="id"/><br/>
+
+        <div class="form-group">
+            <label for="title">Product Type</label>
+            <input type="text" class="form-control" id="title" required minlength="3" maxlength="20"
+                   [(ngModel)]="product.type" name="name" #name="ngModel">
+            <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+                <div [hidden]="!name.errors.required">
+                    Type is required!
+                </div>
+                <div [hidden]="!name.errors.minlength">
+                    Type must be at least 3 characters long.
+                </div>
+                <div [hidden]="!name.errors.maxlength">
+                    Type cannot be more than 20 characters long.
+                </div>
+            </div>
+        </div>
+        Name : <input type='text' [(ngModel)]='product.name' name="name"/><br/>
+        Price : <input type='number' [(ngModel)]='product.price' name="price"/><br/>
+        <input type='button' value='Add' (click)='addProduct();'/>
+        <input type='button' value='Go Back' (click)='goBack();'/>
+
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>CAN you see the change??</h1>
+<input type='button' value='All' (click)='allCars();'/>
+<input type='button' value='Price' (click)='getByPrice();'/>
+<input type='button' value='Make' (click)='getByMake();'/>
+<input type='button' value='Average' (click)='getByAverage();'/>
+<table>
+    <tbody>
+    <tr *ngFor="let car of car">
+        <td>{{car.make}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.price}}</td>
+        <td>{{car.average}}</td>
+        <td>{{car.fuelType}}</td>
+        <td>{{car.gearType}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

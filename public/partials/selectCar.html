@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class='selectCarPage'>
+<head>
+    <meta charset="UTF-8">
+    <title>HOT WHEELS</title>
+</head>
+<body>
+    <h1>Search Car </h1>
+    <p>welcome</p>
+    <select (change)="getModels($event.target.value)">
+        <option>Select Make</option>
+        <option *ngFor="let m of makes" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+
+    <select id="model" (change)="getCar($event.target.value)">
+        <!--<select>-->
+        <option>Select Model</option>
+        <option *ngFor="let m of models" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+    <table>
+        <tbody>
+        <tr><img src = "/images/{{car?.make}}-{{car?.model}}.jpg " width="120" height="120"></tr>
+        <tr>PRICE:{{car?.price}}</tr>
+        <tr>AVERAGE:{{car?.average}}</tr>
+        <tr>FUELTYPE:{{car?.fuelType}}</tr>
+        <tr>GEARtTYPE:{{car?.gearType}}</tr>
+        </tbody>
+    </table>
+    <a routerLink="/customerLogin">BOOK APPOINTMENT</a>
+</body>
+</div>
+</html>

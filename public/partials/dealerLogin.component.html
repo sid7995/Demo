@@ -1,0 +1,56 @@
+<div class='dealerLoginForm'>
+    <form name="dealerLoginForm" #dealerLoginForm="ngForm">
+        <div *ngIf="successMessage" [ngClass]="'success'">
+            {{dealer.username}}{{dealer.password}}
+        </div>
+        <div *ngIf="errorMessage" [ngClass]="'error'"> {{errorMessage}}</div>
+        <h1>{{title}}</h1>
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" class="form-control" id="title" required minlength="3" maxlength="20"
+                   [(ngModel)]="dealer.username" name="username" #name="ngModel">
+            <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+                <div [hidden]="!name.errors.required">
+                    User Name is required!
+                </div>
+                <div [hidden]="!name.errors.minlength">
+                    User Name must be at least 3 characters long.
+                </div>
+                <div [hidden]="!name.errors.maxlength">
+                    User Name cannot be more than 20 characters long.
+                </div>
+            </div>
+            <label for="title1">PassWord</label>
+            <input type="password" class="form-control" id="title1" required minlength="3" maxlength="20"
+                   [(ngModel)]="dealer.password" name="password" #name="ngModel">
+            <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+                <div [hidden]="!name.errors.required">
+                    password is required!
+                </div>
+                <div [hidden]="!name.errors.minlength">
+                    password must be at least 3 characters long.
+                </div>
+                <div [hidden]="!name.errors.maxlength">
+                   password cannot be more than 20 characters long.
+                </div>
+            </div>
+        </div>
+
+
+
+        <input type='button' value='LOGIN' (click)='login();' [disabled]="!dealerLoginForm.form.valid"/>
+
+        <!--<select (change)="make($event.target.value)" )>-->
+            <!--<option *ngFor="let m of makes" value= {{m}}>-->
+                <!--m-->
+            <!--</option>-->
+        <!--</select>-->
+
+        <!--<select>-->
+            <!--<option *ngFor="let b of brands" value= {{b}}>-->
+                <!--b-->
+            <!--</option>-->
+        <!--</select>-->
+
+    </form>
+</div>

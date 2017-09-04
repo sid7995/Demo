@@ -1,0 +1,40 @@
+<div class='addCarForm'>
+    <form name="addCarForm" #addCarForm="ngForm">
+        <div *ngIf="successMessage" [ngClass]="'success'"> {{car.vIN}} {{car.make}}</div>
+        <div *ngIf="errorMessage" [ngClass]="'error'"> {{errorMessage}}</div>
+        <h1>{{title}}</h1>
+        <div class="form-group">
+            <input type='number' placeholder="Vehicle Number" [(ngModel)]='car.vIN' name="vIN" #name="ngModel"/><br/>
+            <input type="text" class="form-control" placeholder="Make"  required minlength="1" maxlength="10"
+                   [(ngModel)]="car.make" name="make" #name="ngModel">
+            <div *ngIf="make.errors && (make.dirty || make.touched)" class="alert alert-danger">
+                <div [hidden]="!name.errors.required">
+                    Make is required!
+                </div>
+                <div [hidden]="!name.errors.minlength">
+                    Make must be at least 1 characters long.
+                </div>
+                <div [hidden]="!name.errors.maxlength">
+                    Make cannot be more than 20 characters long.
+                </div>
+            </div>
+        </div>
+
+         <input type='text' placeholder="Model" [(ngModel)]='car.model' name="model"/><br/>
+        <input type='number' placeholder="Price" [(ngModel)]='car.price' name="model"/><br/>
+       <select name="fuelType" [(ngModel)]="car.fuelType">
+        <option value="">--Select FuelType--</option>
+        <option value="cng">CNG</option>
+        <option value="petrol">PETROL</option>
+        <option value="diesel">DIESEL</option>
+    </select><br/>
+        <select name="gearType" [(ngModel)]="car.gearType">
+        <option value="">--Select GearType--</option>
+        <option value="manual">MANUAL</option>
+        <option value="automatic">AUTOMATIC</option>
+    </select><br/>
+        <input type='number' placeholder="Average" [(ngModel)]='car.average' name="average"/><br/>
+        <input type='button' value='Add' (click)='addCars();' [disabled]="!addCarForm.form.valid"/>
+
+    </form>
+</div>

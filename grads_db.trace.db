@@ -1,0 +1,754 @@
+08-17 13:55:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 13:55:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 13:55:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 13:55:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 15:12:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 15:12:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 15:12:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 15:12:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 15:56:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 15:56:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 15:56:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 15:56:44 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:00:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:00:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:00:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:00:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:03:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:03:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:03:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:03:23 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:04:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:04:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:04:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:04:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:06:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:06:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:06:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:06:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:08:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:08:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:08:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:08:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:13:13 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:13:13 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:13:13 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:13:13 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:20:06 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:20:06 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:20:06 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:20:06 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:21:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:21:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:21:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:21:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:33:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:33:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:33:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:33:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]
+08-17 16:58:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Schema "GRADS" not found; SQL statement:
+create table grads.employee( [90079-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.getSchema(Parser.java:613)
+	at org.h2.command.Parser.getSchema(Parser.java:620)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5162)
+	at org.h2.command.Parser.parseCreate(Parser.java:3802)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:217)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:121)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:47)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.importScript(SchemaExport.java:505)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:437)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:361)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:350)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at DemoApp.main(DemoApp.java:10)
+08-17 16:58:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] BIGINT NOT NULL, "; expected "INSERT, {"; SQL statement:
+id BIGINT NOT NULL, [42001-164]
+08-17 16:58:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIRSTNAME[*] VARCHAR(50) NOT NULL "; expected "FROM, {"; SQL statement:
+firstName VARCHAR(50) NOT NULL [42001-164]
+08-17 16:58:00 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")"; SQL statement:
+) [42000-164]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class='selectProduct'>
+<head>
+    <meta charset="UTF-8">
+    <title>HOT WHEELS</title>
+</head>
+<body>
+<div class="select">
+    <select (change)="getName($event.target.value)">
+        <option>Select Type</option>
+        <option *ngFor="let m of type" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+
+    <select id="name" (change)="getProduct($event.target.value)">
+        <!--<select>-->
+        <option>Select Name</option>
+        <option *ngFor="let m of name" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+    <input type="button" value="Buy Product" (click)='buy();'/>
+</div>
+    <table  *ngIf="a && b && c">
+        <tbody>
+        <tr><img src = "/images/{{product?.type}}-{{product?.name}}.jpg " width="400" height="400"></tr>
+        <tr>Type : {{product?.type}}</tr>
+        <tr>Name : {{product?.name}}</tr>
+        <tr>Price: {{product?.price}}</tr>
+        <tr>Shop Location : Shastrinagar,Pune</tr>
+        </tbody>
+    </table>
+<viewAllProducts></viewAllProducts>
+</body>
+</div>
+</html>

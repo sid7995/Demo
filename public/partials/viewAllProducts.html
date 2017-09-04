@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body><div class="all">
+<input type='button' value='All Products' (click)='allProducts();'/>
+<input type='button' value='Sort By Price' (click)='getByPrice();'/>
+</div>
+<table>
+    <tbody>
+    <th></th>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Price</th>
+    <tr *ngFor="let product of product">
+        <td><img src = "/images/{{product?.type}}-{{product?.name}}.jpg " width="120" height="120"></td>
+        <td>{{product?.type}}</td>
+        <td>{{product?.name}}</td>
+        <td>{{product?.price}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

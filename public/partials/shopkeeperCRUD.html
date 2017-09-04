@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body><div class="crud">
+<input type='button' value='All' (click)='allProducts();'/>
+<input type='button' value='Add Product' (click)='addProduct();'/>
+
+<table *ngIf="a || b" border="0">
+    <tbody>
+    <th>Image</th>
+    <th>Product Id</th>
+    <th>Product Type</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <tr *ngFor="let p of product">
+
+    <td><img src = "/images/{{p?.type}}-{{p?.name}}.jpg " width="120" height="120"></td>
+
+    <td>{{p.id}}</td>
+        <td>{{p.type}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td><input type='button' value="DELETE" name="{{p.id}}" (click)="deleteProduct($event);"/></td>
+    </tr>
+    </tbody></table>
+    </div>
+</body>
+</html>

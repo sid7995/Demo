@@ -1,0 +1,31 @@
+.buy{
+    color: #2A88AD;
+    font-size: 100%;
+}
+.buy h1 {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    text-decoration-color: #2A88AD;
+    margin-bottom: 1px;
+}
+.buy h2{
+    margin-top: 0px;
+}
+
+.buy input[type="button"],
+.buy input[type="submit"]{
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
